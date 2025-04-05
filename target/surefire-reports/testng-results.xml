@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-06T00:46:32 IST" name="Suite" finished-at="2025-04-06T00:51:06 IST" duration-ms="274172">
+    <groups>
+    </groups>
+    <test started-at="2025-04-06T00:46:32 IST" name="Test" finished-at="2025-04-06T00:51:06 IST" duration-ms="274172">
+      <class name="QATest.TestCase1">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:QATest.TestCase1@7f0eb4b4]" started-at="2025-04-06T00:46:23 IST" name="setUpBrowser" finished-at="2025-04-06T00:46:32 IST" duration-ms="8716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="loginNaukri()[pri:0, instance:QATest.TestCase1@7f0eb4b4]" started-at="2025-04-06T00:46:32 IST" name="loginNaukri" finished-at="2025-04-06T00:51:06 IST" duration-ms="274053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNaukri -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:QATest.TestCase1@7f0eb4b4]" started-at="2025-04-06T00:51:06 IST" name="closeBrowser" finished-at="2025-04-06T00:51:06 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- QATest.TestCase1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

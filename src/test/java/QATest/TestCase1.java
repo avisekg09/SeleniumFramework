@@ -63,7 +63,7 @@ public class TestCase1 extends BaseTest{
 		textList2.clear();
 		textList3.clear();
 		Thread.sleep(5000);
-		System.out.println(j);
+		//System.out.println(j);
 		j++;
 		}
 		
