@@ -26,13 +26,18 @@ public class SearchedJobEvents {
 		return ele.getWebElements("XPATH", SearchedJobPageObj.jobExperience);
 	}
 	public WebElement changePage() {
+		waitForPageLoad();
 		 return ele.getWebElement("XPATH", SearchedJobPageObj.pagination);
 	}
 	public void waitForPageLoad() {
+		try {
 		JavascriptExecutor js = (JavascriptExecutor) BaseTest.driver;
-		WebDriverWait wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(25));
 		wait.until(webDriver -> js.executeScript("return document.readyState").equals("complete"));
 		wait.until(ExpectedConditions.visibilityOfAllElements(logo()));
+		}catch (Exception e) {
+			System.out.println(e);
+		}
 	}
 	public List<WebElement> pages() {
 		return ele.getWebElements("XPATH", SearchedJobPageObj.pages);

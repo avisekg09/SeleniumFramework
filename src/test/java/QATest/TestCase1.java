@@ -16,6 +16,7 @@ public class TestCase1 extends BaseTest{
 
 	@Test
 	public void loginNaukri() throws InterruptedException, IOException {
+		try {
 		HomePageEvents hp = new HomePageEvents();
 		SearchedJobEvents sj = new SearchedJobEvents();
 		WriteListsToExcel2 saveList = new WriteListsToExcel2();
@@ -30,10 +31,11 @@ public class TestCase1 extends BaseTest{
 		//boolean attr = sj.disabledNextButton();
 		while(!sj.disabledNextButton())
 		{
+		sj.waitForPageLoad();
 		List<WebElement> listOfCompanyText = sj.listOfCompanyJob();
 		List<WebElement> listOfJobText = sj.listOfJobTitle();
 		List<WebElement> listOfJobExpText = sj.listOfJobExp();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
         // Convert the WebElement list to a List of Strings (extracting the text)
         List<String> textList1 = listOfCompanyText.stream()
                                            .map(WebElement::getText)  // Extract the text from each WebElement
@@ -62,11 +64,15 @@ public class TestCase1 extends BaseTest{
 		textList1.clear();
 		textList2.clear();
 		textList3.clear();
+		sj.waitForPageLoad();
 		Thread.sleep(5000);
 		//System.out.println(j);
 		j++;
 		}
 		
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

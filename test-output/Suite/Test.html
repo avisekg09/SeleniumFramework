@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 05 18:59:09 IST 2025</td>
+<td>Started on:</td><td>Sun Apr 06 01:25:13 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137362 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16525 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,51 +76,28 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='QATest.TestCase1.loginNaukri()'><b>loginNaukri</b><br>Test class: QATest.TestCase1</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (949, 669). Other element would receive the click: &lt;div class=&quot;styles_pagination__oIvXh&quot; id=&quot;lastCompMark&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.41)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ec95b69d58258937688706e83c7b28fc, clickElement {id=f.64DF809F03224B5451C45DB6A7BB668A.d.1FBA092400C1EFB6C8D78951CF3CD0D3.e.1040}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59824/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ec95b69d58258937688706e83c7b28fc)] -&gt; xpath: //*[contains(@class,&apos;pagination&apos;) and @id=&apos;lastCompMark&apos;]//a/descendant-or-self::*[text()=&apos;Next&apos;]]
-Session ID: ec95b69d58258937688706e83c7b28fc
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at QATest.TestCase1.loginNaukri(TestCase1.java:49)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa1edee769252a65829083739173fa3b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageEvents.SearchedJobEvents.waitForPageLoad(SearchedJobEvents.java:35)
+	at QATest.TestCase1.loginNaukri(TestCase1.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1049650037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1049650037'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (949, 669). Other element would receive the click: &lt;div class=&quot;styles_pagination__oIvXh&quot; id=&quot;lastCompMark&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.41)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628164202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628164202'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ec95b69d58258937688706e83c7b28fc, clickElement {id=f.64DF809F03224B5451C45DB6A7BB668A.d.1FBA092400C1EFB6C8D78951CF3CD0D3.e.1040}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59824/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ec95b69d58258937688706e83c7b28fc)] -&gt; xpath: //*[contains(@class,&apos;pagination&apos;) and @id=&apos;lastCompMark&apos;]//a/descendant-or-self::*[text()=&apos;Next&apos;]]
-Session ID: ec95b69d58258937688706e83c7b28fc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at QATest.TestCase1.loginNaukri(TestCase1.java:49)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.41, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 135.0.7049.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa1edee769252a65829083739173fa3b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageEvents.SearchedJobEvents.waitForPageLoad(SearchedJobEvents.java:35)
+	at QATest.TestCase1.loginNaukri(TestCase1.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,7 +127,7 @@ Session ID: ec95b69d58258937688706e83c7b28fc
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>137</td>
+<td>16</td>
 <td>QATest.TestCase1@71a8adcf</td></tr>
 </table><p>
 </body>
